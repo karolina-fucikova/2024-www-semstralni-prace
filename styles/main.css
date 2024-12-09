@@ -1,0 +1,933 @@
+:root {
+    --lightblue: #18b1bc;
+    --darkblue: #106285;
+    --black: #000000;
+    --white: #ffffff;
+    --backgoundblue: #add5e79c;
+    --lighterblue: #74d9e0;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--darkblue);
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    max-width: 700px;
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.sec__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.drobenka {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.drobenka a {
+    color: var(--Cerna);
+    padding: 0.1em;
+}
+
+.drobenka img {
+    padding-bottom: 0.4em;
+}
+
+.drobenka__span {
+    display: inline-flex;
+    border: 2px solid var(--lightblue);
+    height: 1px;
+    border-radius: 2px;
+}
+
+.foto__profil {
+    margin: 1em 1em 1em 0;
+}
+
+.yellow {
+    color: yellow;
+}
+
+/*HEADER*/
+
+.header {
+    background-color: var(--lightblue);
+}
+
+.header__inline {
+    display: flex;
+    font-family: 'Hanken Grotesk', sans-serif;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: var(--lighterblue);
+}
+
+.header__kontakt {
+    gap: 20px;
+}
+
+.header__kontakt img {
+    width: 100%;
+}
+
+.header__inline p {
+    display: none;
+}
+
+.telefon,
+.posta,
+.header__profile,
+.header__kontakt {
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+/*NAVIGACE*/
+
+.header__navigace {
+    background-color: var(--lightblue);
+}
+
+.navbar__logo {
+    max-width: 185px;
+}
+
+.logo--text {
+    padding-right: 5px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    /*padding-top: 0.2em;*/
+    color: white;
+    font-size: large;
+    z-index: 2;
+}
+
+.nav-link {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.telefon,
+.posta,
+.header__profile {
+    gap: 5px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    transition: 1s;
+}
+
+.nav-item {
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid var(--white);
+    padding: 0.5em 0;
+    width: 100%;
+}
+
+/*HOMEPAGE*/
+
+.sec1__check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec1__check--text ul {
+    padding: 0.5em 0.5em;
+    margin: 0;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 1em;
+    gap: 20px;
+    padding: 1.5em;
+}
+
+.sec1__h1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section1__item--text {
+    padding: 0;
+    margin: 0 0 1.5em 0;
+}
+
+.hp-btn {
+    background-color: var(--lightblue);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 16px 0;
+    width: fit-content;
+}
+
+.hp-btn:hover {
+    background-color: var(--darkblue);
+}
+
+
+.homepage__h2 {
+    text-align: center;
+    padding: 1.5em;
+    margin: 0;
+    /*margin-bottom: 1em;*/
+}
+
+.top-destinace__blok {
+    display: flex;
+    position: relative;
+}
+
+.top-destinace__blok:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.top-destinace__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.top-destinace__text {
+    position: absolute;
+    background-color: var(--lighterblue);
+    color: var(--darkblue);
+    font-weight: 600;
+    right: 0;
+    bottom: 30px;
+    padding: 10px;
+}
+
+.top-destinace__h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.top-destinace__p {
+    margin: 0;
+}
+
+.reference__item {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--lightblue);
+}
+
+.reference__item--blok {
+    padding: .5em;
+    border-radius: 16px;
+
+}
+
+.reference__item--blok p:first-child {
+    font-size: large;
+    font-weight: bold;
+}
+
+.reference-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 2em;
+}
+
+.reference__profil {
+    display: flex;
+    align-items: center;
+}
+
+.reference__word--circle {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    text-align: center;
+    color: var(--white);
+    border-radius: 50%;
+    padding: .5em;
+    margin: .5em .5em .5em 0;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.green {
+    background-color: green;
+}
+
+
+
+.profile__blok {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__name {
+    margin: 0;
+}
+
+.reference__text {
+    margin: 0;
+}
+
+/*DESTINACE*/
+
+.destinace {
+    margin: 0 5px;
+}
+
+.destinace_uvod {
+    margin: 2em;
+}
+
+.destinace__item {
+    margin: 2em;
+}
+
+.more-info-btn {
+    color: var(--lightblue);
+    text-decoration: underline;
+}
+
+.price__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formular-btn {
+    background-color: var(--lightblue);
+    color: var(--white);
+    border: 3px solid var(--darkblue);
+    padding: 5px;
+}
+
+.formular-btn:hover {
+    background-color: var(--darkblue);
+}
+
+.destinace__img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.proc-my__blok {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    margin: 1em;
+}
+
+.proc-my__item {
+    background-color: var(--lighterblue);
+    border-radius: 4px;
+    padding: 1em;
+}
+
+/*PUJCOVNA*/
+
+.cenik {
+    border-collapse: collapse;
+    border: 1px solid var(--black);
+    width: 100%;
+}
+
+.pujcovna__sec1 {
+    margin: 2em;
+}
+
+.pujcovna__adresa--text {
+    margin: 2em;
+}
+
+.pujcovna__cenik {
+    margin: 2em;
+}
+
+.cenik__popis {
+    margin: 1em;
+    font-weight: bold;
+    font-size: larger;
+    color: var(--darkblue);
+}
+
+.cenik__radek--popis th {
+    font-weight: bold;
+    padding: 8px;
+    /*border: 1px solid var(--darkblue);*/
+}
+
+.cenik__radek th {
+    font-weight: 400;
+    padding: 8px;
+    border: 1px solid var(--black);
+}
+
+.pujcovna__formular {
+    margin: 2em;
+}
+
+/*formular*/
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--lightblue);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--darkblue);
+}
+
+/*KONTAKT*/
+
+.kontakt__sec1 {
+    margin: 2em;
+}
+
+.kontakt__sec2--text {
+    margin: 2em 2em;
+}
+
+.kontakt__doba--blok {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.kontakt__doba--popis {
+    text-align: start;
+}
+
+.kontakt__doba--item {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    gap: 16px;
+}
+
+
+.mapa {
+    width: 100%;
+    height: 400px;
+}
+
+.kontakt__personal {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.kontakt__personal--block {
+    display: flex;
+    justify-content: center;
+    background-color: var(--lighterblue);
+    border-radius: 16px;
+}
+
+.foto__logo {
+    width: 140px;
+    margin: 1em;
+}
+
+.kontakt__sec3 {
+    margin: 3em 1em;
+}
+
+.kontakt__sec3 h2 {
+    text-align: center;
+}
+
+.kontakt__sec3--block {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.kontakt__foto {
+    max-width: 100px;
+}
+
+.kontakt__personal--text p {
+    margin: 5px 0;
+    color: var(--darkblue);
+}
+
+.kontakt__personal--text p:first-child {
+    font-weight: bold;
+}
+
+.kontakt__personal--text a {
+    display: block;
+    color: var(--darkblue);
+    margin: 5px 0;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--lightblue);
+    color: var(--white);
+    padding: 1em 0 1em 0;
+}
+
+.footer__block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer__logo {
+    max-width: 185px;
+    margin: 1em;
+}
+
+.footer__logo--text {
+    padding-right: 5px;
+
+}
+
+.footer__logo2 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.footer__item {
+    text-align: start;
+    margin: 1em 2em;
+}
+
+.footer__item a {
+    color: var(--white);
+}
+
+.footer__h3 {
+    color: var(--white);
+}
+
+.footer__item--underline {
+    text-align: center;
+}
+
+.footer__underline--text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.footer__line {
+    display: flex;
+    border: 1px solid var(--white);
+}
+
+.sec__footer--line {
+    margin: 2em;
+}
+
+.footer__kontakt {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__kontakt a {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5em 0;
+    gap: 10px;
+}
+
+.footer__a {
+    display: block;
+    color: var(--svetlaModra);
+    margin: 1em 0;
+}
+
+
+
+/*MEDIAQ*/
+
+@media screen and (min-width: 768px) {
+    /*Q-HEADER*/
+
+    .header__inline p {
+        display: inline;
+        margin: 0;
+    }
+
+    .header__kontakt p {
+        min-width: 150px;
+    }
+
+    /*Q-NAVIGACE*/
+
+    .header__navigace {
+        display: flex;
+        align-items: center;
+        padding: 2em 1em;
+        justify-content: space-between;
+        background-color: var(--lightblue);
+        gap: 24px;
+    }
+
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        transition: none;
+        right: 0;
+        justify-content: space-between;
+        max-width: 700px;
+    }
+
+    .nav__pages {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        gap: 2;
+    }
+
+    .nav__border {
+        border: 2px solid var(--Seda);
+        align-self: center;
+        height: 30px;
+    }
+
+    .nav-item {
+        display: flex;
+        padding: 0.4em;
+        border: none;
+        justify-content: space-between;
+        width: auto;
+        border-bottom: 2px solid var(--lightblue);
+    }
+
+    .nav-item:hover {
+        border-bottom: 2px solid var(--white);
+        /*padding-top: 0.4em;*/
+
+    }
+
+    /*Q-HOMEPAGE*/
+
+    .section1 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sec1__check--block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 2em;
+        max-width: 380px;
+    }
+
+    .sec1__check {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section1__item--text {
+        padding: 0;
+        margin: 0;
+    }
+
+    .top-destinace__obal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .top-destinace__img {
+        max-width: 450px;
+        height: 100%;
+
+    }
+
+    .sec__proc-my {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proc-my__blok {
+        flex-wrap: wrap;
+        width: fit-content;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .proc-my__item {
+        max-width: 200px;
+    }
+
+    .reference__item {
+        justify-content: space-around;
+    }
+
+    .reference__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .reference-list__item {
+        max-width: 270px;
+
+    }
+
+    /*Q-destinace*/
+    .destinace__popis {
+        display: flex;
+
+    }
+
+    .destinace__img {
+        max-width: 450px;
+    }
+
+    .destinace__nabidka {
+        margin-bottom: 1em;
+    }
+
+    /*Q-pujcovna*/
+
+    .pujcovna__adresa {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pujcovna__cenik {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .formular {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    /*Q-KONTAKT*/
+
+    .kontakt__sec3 {
+        margin: auto auto 3em auto;
+    }
+
+    .kontakt__sec2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 0 0 4em 0;
+    }
+
+    .kontakt__sec2--text {
+        margin: 0 2em;
+        min-width: 200px;
+    }
+
+    /*
+    .mapa {
+        max-height: 350px;
+        max-width: 420px;
+    }
+*/
+    .kontakt__pozadi {
+        border-radius: 30px;
+    }
+
+    .kontakt__sec3--block {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /*Q-FOOTER*/
+
+    .footer__block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__blok2 {
+        display: flex;
+    }
+
+
+    .footer__logo {
+        max-width: 185px;
+        margin: 1em;
+    }
+
+    .footer__logo--text {
+        padding-right: 5px;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .footer__logo2 {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 32px;
+        z-index: 2;
+    }
+
+    .footer__item--underline {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;
+    }
+
+    .sec__footer--line {
+        display: flex;
+        justify-content: center;
+        margin: 2em;
+    }
+
+    .footer__line {
+        width: 100%;
+    }
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 961px) {
+    .header__kontakt {
+        margin-left: 10em;
+    }
+
+    .header__profile {
+        margin-right: 10em;
+    }
+
+    .header__navigace {
+        margin: 0 10em;
+    }
+
+    .section1 {
+        justify-content: space-between;
+        margin: auto 15em auto 15em;
+    }
+
+    .proc-my__blok {
+        margin: auto 10em auto 10em;
+    }
+
+    .reference {
+        margin: auto 10em auto 10em;
+    }
+
+    .destinace {
+        margin: auto 10em auto 10em;
+    }
+
+    .pujcovna__main {
+        margin: auto 10em auto 10em;
+    }
+
+    .kontakt__sec1,
+    .kontakt__sec2 {
+        margin: auto 10em auto 10em;
+    }
+
+    .kontakt__sec3 {
+        margin: auto 10em 3em 10em;
+    }
+
+    .footer__item--underline {
+        margin: auto 12em auto 11em;
+    }
+
+    .footer__line {
+        margin: auto 10em auto 10em;
+    }
+
+    .footer__block {
+        margin: auto 10em auto 10em;
+    }
+}
