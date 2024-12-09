@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inder', sans-serif;
 }
 
 a {
@@ -79,7 +79,7 @@ h3 {
 
 .header__inline {
     display: flex;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     justify-content: space-between;
     padding: 1em;
     background-color: var(--lighterblue);
@@ -248,6 +248,23 @@ h3 {
     margin: 0;
 }
 
+.proc-my__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.proc-my__item img {
+    max-width: 50px;
+}
+
+.proc-my__item h3,
+.proc-my__item p {
+    text-align: center;
+    margin: .2em;
+}
+
 .reference__item {
     display: flex;
     text-align: center;
@@ -369,7 +386,7 @@ h3 {
 .proc-my__item {
     background-color: var(--lighterblue);
     border-radius: 4px;
-    padding: 1em;
+    padding: 2em;
 }
 
 /*PUJCOVNA*/
@@ -466,7 +483,7 @@ input[type=submit]:hover {
 .kontakt__doba--item {
     display: flex;
     justify-content: space-between;
-    padding: .5em;
+    padding: .5em 0;
     gap: 16px;
 }
 
@@ -713,7 +730,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .top-destinace__img {
@@ -781,6 +798,7 @@ footer {
     .pujcovna__cenik {
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
 
@@ -805,7 +823,7 @@ footer {
     }
 
     .kontakt__sec2--text {
-        margin: 0 2em;
+        margin: 0;
         min-width: 200px;
     }
 
@@ -874,9 +892,9 @@ footer {
     }
 }
 
-/*TABLET*/
+/*DESKTOP*/
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1200px) {
     .header__kontakt {
         margin-left: 10em;
     }
@@ -891,7 +909,11 @@ footer {
 
     .section1 {
         justify-content: space-between;
-        margin: auto 15em auto 15em;
+        margin: auto 10em auto 10em;
+    }
+
+    .top-destinace {
+        margin: auto 10em auto 10em;
     }
 
     .proc-my__blok {
