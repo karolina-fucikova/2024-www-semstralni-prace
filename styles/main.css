@@ -405,6 +405,15 @@ h3 {
     margin: 2em;
 }
 
+.pujcovna__kontakt {
+    display: block;
+}
+
+.pujcovna__kontakt--odkaz {
+    color: var(--black);
+    margin: 1em 0;
+}
+
 .pujcovna__cenik {
     margin: 2em;
 }
@@ -823,16 +832,15 @@ footer {
     }
 
     .kontakt__sec2--text {
-        margin: 0;
+        margin: 2em;
         min-width: 200px;
     }
 
-    /*
+
     .mapa {
-        max-height: 350px;
-        max-width: 420px;
+        margin: 2em;
     }
-*/
+
     .kontakt__pozadi {
         border-radius: 30px;
     }
@@ -935,6 +943,10 @@ footer {
     .kontakt__sec1,
     .kontakt__sec2 {
         margin: auto 10em auto 10em;
+    }
+
+    .kontakt__sec2--text {
+        margin: 0;
     }
 
     .kontakt__sec3 {
