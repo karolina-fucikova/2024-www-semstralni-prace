@@ -160,57 +160,59 @@
       </section>
       <section class="pujcovna__formular">
         <!--objednavaci formular na lode, pocet, kontakt,..-->
-        <form class="formular">
-          <div>
-            <label for="vyzvednuti">Datum vyzvednutí</label>
-            <input type="text" id="vyzvednuti" name="vyzvednutí" placeholder="Datum vyzvednutí">
-          </div>
-
-          <div>
-            <label for="vraceni">Datum vrácení</label>
-            <input type="text" id="vraceni" name="vraceni" placeholder="Datum vrácení">
-          </div>
-
-          <div>
-            <label for="name">Jméno a Příjmení</label>
-            <input type="text" id="name" name="name" placeholder="Jméno a Příjmení">
-          </div>
-      
-          <!--<div>
-            <label for="lname">Příjmení</label>
-            <input type="text" id="lname" name="lastname" placeholder="Příjmení">
-          </div>-->
-
-          <div>
-            <label for="email">E-mail</label>
-            <input type="text" id="email" name="email" placeholder="E-mail">
-          </div>
-
-          <div>
-            <label for="telefon">Telefon</label>
-            <input type="text" id="telefon" name="telefon" placeholder="Telefon">
-          </div>
-
-          <div>
-            <label for="ulice">Ulice</label>
-            <input type="text" id="ulice" name="ulice" placeholder="Ulice">
-          </div>
-
-          <div>
-            <label for="mesto">Město</label>
-            <input type="text" id="mesto" name="mesto" placeholder="Město">
-          </div>
-
-          <div>
-            <label for="psc">PSČ</label>
-            <input type="text" id="psc" name="psc" placeholder="PSČ">
-          </div>
-
-          <div>
-            <label for="poznamka">Poznámka</label>
-            <input type="text" id="poznamka" name="note" placeholder="Poznámka">
-          </div>
-      
+        <form >
+          <div class="formular">
+            <div>
+              <label for="vyzvednuti">Datum vyzvednutí</label>
+              <input type="date" id="vyzvednuti" name="vyzvednutí" placeholder="Datum vyzvednutí">
+            </div>
+  
+            <div>
+              <label for="vraceni">Datum vrácení</label>
+              <input type="date" id="vraceni" name="vraceni" placeholder="Datum vrácení">
+            </div>
+  
+            <div>
+              <label for="name">Jméno a Příjmení</label>
+              <input type="text" id="name" name="name" placeholder="Jan Novák">
+            </div>
+        
+            <!--<div>
+              <label for="lname">Příjmení</label>
+              <input type="text" id="lname" name="lastname" placeholder="Příjmení">
+            </div>-->
+  
+            <div>
+              <label for="email">E-mail</label>
+              <input type="text" id="email" name="email" placeholder="novak@email.cz">
+            </div>
+  
+            <div>
+              <label for="telefon">Telefon</label>
+              <input type="text" id="telefon" name="telefon" placeholder="+420 123 456 789">
+            </div>
+  
+            <div>
+              <label for="ulice">Ulice</label>
+              <input type="text" id="ulice" name="ulice" placeholder="Modrá">
+            </div>
+  
+            <div>
+              <label for="mesto">Město</label>
+              <input type="text" id="mesto" name="mesto" placeholder="Pardubice">
+            </div>
+  
+            <div>
+              <label for="psc">PSČ</label>
+              <input type="text" id="psc" name="psc" placeholder="420">
+            </div>
+  </div>
+            <div class="form__poznamka">
+              <label for="poznamka">Zpráva</label>
+              <input type="text" id="poznamka" name="note" placeholder="Chtěl bych si půjčit...">
+            </div>
+          
+   <!--   
           <div>
             <label for="country">Položka</label>
             <select id="country" name="country">
@@ -224,7 +226,7 @@
               <option value="sud">Sud</option>
             </select>
           </div>
-        
+        -->
           <!--<input type="submit" value="Odeslat">-->
         </form>
         <input type="submit" value="Odeslat">
